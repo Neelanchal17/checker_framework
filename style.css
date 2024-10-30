@@ -61,12 +61,41 @@ h1, h2, h3, h4, h5, p, li{
     color: #212529;
 }
 a {
-    color: #47532f;
+    color: #72BF78;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
 }
 
 a:hover {
+
     color: #A0D683;
 }
 .nav-a:hover {
     color: #72BF78;    
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    
+    background-color:   #72BF78;
+    border-radius: 10%;
+
+}
+.button:hover {
+    background-color: #89d18f;
+
+}
+.button a {
+    color: #212529;
+}
+
+@media (max-width: 800px) {
+    .nav-a {
+        display: none;
+    }
+    
 }
