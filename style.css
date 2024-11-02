@@ -97,5 +97,48 @@ a:hover {
     .nav-a {
         display: none;
     }
-    
+}
+
+.nav-bar-mobile {
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.nav-bar-mobile.active {
+    right: 0;
+}
+
+nav {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    margin-left: auto;
+}
+
+
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #212529;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 3s ease;
+}
+.hum-menu span:nth-child(1) {
+    top: 25%;
+}
+.hum-menu span:nth-child(3) {
+    top: 75%;
 }
